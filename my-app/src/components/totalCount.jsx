@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Select from "react-select";
 import services from "./services.json";
 
-import styles from "./totalCount.module.scss"
+
 
 const TotalCount = () => {
   const [selectedServices, setSelectedServices] = useState([]);
@@ -30,20 +30,20 @@ const TotalCount = () => {
         value={selectedServices}
         onChange={handleChange}
         placeholder="select a service"
-        className="px-4"
+        className="px-4 text-[#0ea5e9]"
       />
     
     
     <ul className="flex flex-col py-4  ">
     {selectedServices.map(service => (
-            <li className="flex justify-between" key={service.value}>
-              <p>{service.value}</p>
+            <li className="flex justify-between px-4" key={service.value}>
+             <p>{service.value.charAt(0).toUpperCase() + service.value.slice(1)}</p>
               <p className="py-4">${service.price}</p>               
             </li>
             
           ))}
     </ul>
-<p className="pb-[40px]">Total Price: ${totalPrice()}</p>
+<p className=" flex justify-between px-4 pb-[40px]">Total Price: ${totalPrice()}</p>
 
     </div>
   );
