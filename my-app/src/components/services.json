@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "consultation of gastroenterology",
+        "price": 300
+    },
+    {
+        "id": 2,
+        "name": "consultation of therapy",
+        "price": 200
+    },
+    {
+        "id": 3,
+        "name": "consultation of cardiology",
+        "price": 500
+    },
+    {
+        "id": 4,
+        "name": "consultation of surgery",
+        "price": 400
+    },
+    {
+        "id": 5,
+        "name": "consultation of generalist",
+        "price": 300
+    },
+    {
+        "id": 6,
+        "name": "consultation of intern",
+        "price": 100
+    },
+    {
+        "id": 7,
+        "name": "laboratory blood",
+        "price": 1000
+    },
+    {
+        "id": 8,
+        "name": "laboratory urina",
+        "price": 800
+    }
+]
